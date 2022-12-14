@@ -96,7 +96,7 @@ n = np.c_[data['x'], data['y'], data['z']]
 
 import pptk
 
-v = pptk.viewer(xyz*180000000)
+v = pptk.viewer(xyz)
 v.attributes(rgb / 255., 0.5* (1 + n))
 v.color_map('cool')
 v.set(point_size=0.008,bg_color=[0,0,0,0],show_axis=0,show_grid=0)
